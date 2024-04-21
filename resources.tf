@@ -17,7 +17,8 @@ data "aws_availability_zones" "available" {}
 ##################################################################################
 locals {
   common_tags = {
-    "Environment" = var.Environment
+    "Environment"  = var.Environment
+    "delete_after" = var.delete_after
 
   }
 }

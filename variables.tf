@@ -33,3 +33,7 @@ variable "Environment" {
   default = "dev"
 }
 
+variable "delete_after" {
+  type    = string
+  default = "05/02/23"
+}
