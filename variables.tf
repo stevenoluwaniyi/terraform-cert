@@ -29,7 +29,7 @@ variable "public_subnets" {
   }
 }
 variable "Environment" {
-  type = string
+  type    = string
   default = "dev"
 }
 
