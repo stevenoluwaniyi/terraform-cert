@@ -35,4 +35,5 @@ terraform.rc
 .terraform
 .terraform.lock.hcl
 
+backend_local.tf
 
