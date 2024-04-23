@@ -16,10 +16,10 @@ resource "aws_security_group" "ingress" {
     to_port          = 0
   }]
   ingress                = []
-  name                   = "no-ingress-sg"
+  name                   = "${var.prefix}-${var.Environment}-sg"
   name_prefix            = null
   revoke_rules_on_delete = null
   tags                   = {}
   tags_all               = {}
-  vpc_id                 = "vpc-02d4e0bd34cb79c5f"
+  vpc_id                 = module.main.vpc_id
 }

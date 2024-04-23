@@ -39,5 +39,6 @@ module "main" {
 
   enable_nat_gateway = false
 
-  tags = local.common_tags
+  tags = merge({"Name" : "${var.prefix}-${var.Environment}"},
+  local.common_tags
 }
